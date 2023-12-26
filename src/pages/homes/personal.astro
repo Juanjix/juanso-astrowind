@@ -11,7 +11,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Juan José Peralta',
 };
 ---
 
@@ -25,7 +25,7 @@ const metadata = {
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
+        { text: 'Gitlab', href: 'https://gitlab.com/juanjose4' },
       ]}
       actions={[
         {
@@ -42,14 +42,15 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    title="Juan José Peralta"
+    tagline="Personal Website"
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      A former Tennis professor and player turned Frontend Engineer with three years of industry expertise, I've
+      seamlessly transitioned my passion for precision and performance from the tennis court to crafting exceptional
+      digital experiences at a high-end agency from Argentina, combining my unique background with technical prowess to
+      elevate web development to new heights.
     </Fragment>
   </Hero>
 
@@ -60,32 +61,32 @@ const metadata = {
     columns={3}
     items={[
       {
-        icon: 'tabler:brand-dribbble',
+        icon: 'tabler:brand-linkedin',
         callToAction: {
           target: '_blank',
-          text: 'Dribbble',
+          text: 'LinkedIn',
           href: '#',
         },
       },
       {
-        icon: 'tabler:brand-behance',
+        icon: 'tabler:brand-facebook',
         callToAction: {
           target: '_blank',
-          text: 'Behance',
+          text: 'Facebook',
           href: '#',
         },
       },
       {
-        icon: 'tabler:brand-pinterest',
+        icon: 'tabler:brand-instagram',
         callToAction: {
           target: '_blank',
-          text: 'Pinterest',
+          text: 'Instagram',
           href: '#',
         },
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: '/images/juanso-cv-photo.jpeg',
       alt: 'Colorful Image',
     }}
   >
@@ -117,14 +118,26 @@ const metadata = {
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          'Front End Developer <br /> <span class="font-normal">Indicius, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2020 - 2023</span>',
+        description: `
+            • As a Front-End Developer at Indicius since 2020, I've been the creative force behind translating design concepts into vibrant and functional digital experiences.<br/><br/>
+            • I played a key role in ensuring our products are not only visually appealing but also user-friendly, accessible, scalable, and high-performing.<br/><br/>
+            • Collaborated closely with the Design team to validate and implement their creative ideas seamlessly into the development process.<br/><br/>
+            • Precisionmatters,andIexcelledinaccuratelyestimatingprojectdeliverydates, ensuring timely communication with both the project management team and clients.<br/><br/>
+            • Effective communication is at the core of my role—I've been proactive in updating all stakeholders on project-related situations, whether positive or negative, using tools like GitLab, Trello and Jira for asynchronous collaboration.<br/><br/>
+            • Adhered rigorously to development guidelines, contributing to the establishment of high standards for all company projects.<br/><br/>
+            • Meticulously documented every aspect of the development process, ensuring a clear and comprehensive understanding of the tools involved for ef:cient project management.<br/><br/>
+            <span>Tech Stack: React, TypeScript, GraphHL, Gatsby, Figma, Contenteful</span> `,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'QA Analyst <br /> <span class="font-normal">Pixel2HTML, Remote</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>',
+        description: `• Spearheaded comprehensive manual and automated testing initiatives as a HA Engineer at Pixel2zTML, ensuring the timely delivery of Vawless front-end development projects.<br/><br/>
+        • Thrived in a fully remote work environment, collaborating seamlessly with teams across different time Oones to maintain ef:cient communication and workVow.<br/><br/>
+        • Validated design concepts rigorously, guaranteeing the feasibility of proposed ideas for swift and seamless development, contributing to on-time project completion.<br/><br/>
+        • Developed and executed detailed test plans, utiliOing both manual and automated testing methodologies to identify and rectify any bugs or inconsistencies in the front-end code, enhancing overall project quality and user experience.<br/><br/>
+        Tech Stack: Jest, React Testing Library, Gitlab`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -380,11 +393,13 @@ const metadata = {
   <CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
-    actions={[{
-      variant:"primary",
-      text: 'Hire me',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hire me',
+        href: '/',
+      },
+    ]}
   />
 
   <!-- BlogLatestPost Widget **************** -->
