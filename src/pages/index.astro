@@ -1,6 +1,9 @@
 ---
+// Libraries
 import Layout from '~/layouts/PageLayout.astro';
+import { Image } from 'astro:assets';
 
+// Components
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
@@ -8,6 +11,13 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
+
+// Logo Images
+import GatsbyLogo from '../../public/logos/gatsby-logo.svg';
+import CssLogo from '../../public/logos/brand-css3.svg';
+import HtmlLogo from '../../public/logos/html.svg';
+import FigmaLogo from '../../public/logos/logo-figma.svg';
+import ReactLogo from '../../public/logos/logo-react.svg';
 
 const metadata = {
   title: 'Juan José Peralta',
@@ -23,7 +33,6 @@ const metadata = {
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
-        { text: 'Blog', href: '#blog' },
         { text: 'Gitlab', href: 'https://gitlab.com/juanjose4' },
         { text: 'Github', href: 'https://github.com/Juanjix' },
       ]}
@@ -168,43 +177,48 @@ const metadata = {
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
         title: 'Multitasking Skills',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        description:
+          'Mastering the art of juggling tasks seamlessly, ensuring efficient and simultaneous handling of multiple projects for a harmonious workflow.',
       },
       {
         title: 'Time Management Skills',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
+        description:
+          'Meticulously organizing and optimizing time resources, guaranteeing timely delivery of high-quality frontend solutions in a dynamic development environment.',
       },
       {
         title: 'Strong Communication Skills',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
+        description:
+          'Facilitating smooth collaboration through clear and effective communication, ensuring a shared understanding of complex frontend concepts and fostering team synergy.',
       },
       {
         title: 'Problem Solving Skills',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
+        description:
+          'Thriving in the challenge of identifying and resolving intricate frontend issues, employing creative solutions to deliver optimal user experiences.',
       },
       {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
+        title: 'Innovative Design Thinking',
+        description:
+          'Infusing creativity into frontend development, crafting innovative and visually appealing user interfaces that elevate the overall digital experience.',
       },
       {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
+        title: 'Responsive Web Development:',
+        description:
+          'Specializing in the creation of responsive and adaptive websites, ensuring a seamless user experience across various devices and screen sizes.',
       },
     ]}
   />
+
+  <!-- Tech Start -->
+  <Features3 title="Tech" subtitle="Latest technologies that I am using." />
+  <div class="flex justify-around columns-6 mb-40">
+    <Image src={GatsbyLogo} alt="" height={40} />
+    <Image src={FigmaLogo} alt="" width={90} />
+    <Image src={ReactLogo} alt="" width={90} />
+    <Image src={HtmlLogo} alt="" width={90} />
+    <Image src={CssLogo} alt="" width={90} />
+  </div>
+  <!-- Tech End -->
 
   <!-- Content Widget **************** -->
 
@@ -398,16 +412,4 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- BlogLatestPost Widget **************** -->
-
-  <!-- <BlogLatestPosts
-    id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts> -->
 </Layout>
