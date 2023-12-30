@@ -17,7 +17,8 @@ import Gatsby from '../../public/logos/gatsby-logo.png';
 import Figma from '../../public/logos/logo-figma.svg';
 import React from '../../public/logos/logo-react.svg';
 import Contentful from '../../public/logos/logo-contentful.svg';
-import Logo from '~/components/Logo.astro';
+import AstroLogo from '../../public/logos/astro-logo.svg?raw';
+import Vercel from '../../public/logos/logo-vercel.svg?raw';
 
 const metadata = {
   title: 'Juan José Peralta',
@@ -208,13 +209,14 @@ const metadata = {
   />
 
   <!-- Tech Start -->
-  <Features3 title="Tech" subtitle="Latest technologies that I am using." />
-  <div class="flex flex-col items-center gap-20 md:flex-row md:justify-center md:gap-40 mb-40">
-    <Image src={Gatsby} alt=" " height={90} />
-    <Image src={Figma} alt="" width={90} />
+  <Features3 title="Tech" subtitle="The Newest Technological Tools in My Arsenal." />
+  <div class="flex flex-col items-center gap-20 md:flex-row md:justify-around md:gap-0 mb-20 md:mb-40">
+    <Fragment set:html={Vercel} />
+    <Fragment set:html={AstroLogo} />
+    <Image src={Gatsby} alt="" height={90} />
     <Image src={React} alt="" width={90} />
     <Image src={Contentful} alt="" width={90} />
-    <Logo />
+    <Image src={Figma} alt="" width={90} />
   </div>
   <!-- Tech End -->
 
