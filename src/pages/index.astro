@@ -23,6 +23,9 @@ import Vercel from '../../public/logos/logo-vercel.svg?raw';
 const metadata = {
   title: 'Juan José Peralta',
 };
+
+const indiciusUrl =
+  '<a href="https://indicius.com" target="_blank" rel="noopener noreferrer" class="indi-link">Indicius</a>';
 ---
 
 <Layout metadata={metadata}>
@@ -41,7 +44,7 @@ const metadata = {
       actions={[
         {
           text: 'Hire me',
-          href: '#',
+          href: 'https://cal.com/juanso',
         },
       ]}
       isSticky
@@ -55,7 +58,7 @@ const metadata = {
     id="hero"
     title="Juan José Peralta"
     tagline="Frontend Engineer"
-    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: '/' }]}
+    actions={[{ variant: 'primary', target: '_blank', text: 'Hire me', href: 'https://cal.com/juanso' }]}
   >
     <Fragment slot="subtitle">
       A former Tennis professor and player turned Frontend Engineer with three years of industry expertise, I've
@@ -231,8 +234,7 @@ const metadata = {
     items={[
       {
         title: 'Description:',
-        description:
-          'The project involved a complete rebranding, incorporating cutting-edge technologies to convey a modern and approachable image that resonated with both corporate clients and technology enthusiasts.',
+        description: `Within my role at ${indiciusUrl}, I played a pivotal part in orchestrating a thorough rebranding endeavor. Leveraging avant-garde technologies, we meticulously crafted a sophisticated and approachable image that appealed to corporate stakeholders and tech enthusiasts.`,
       },
       {
         title: 'Role:',
@@ -270,8 +272,7 @@ const metadata = {
     items={[
       {
         title: 'Description:',
-        description:
-          'The project involved a complete rebranding, incorporating cutting-edge technologies to convey a modern and approachable image that resonated with both corporate clients and technology enthusiasts.',
+        description: `Within my role at ${indiciusUrl}, I played a pivotal part in orchestrating a thorough rebranding endeavor. Leveraging avant-garde technologies, we meticulously crafted a sophisticated and approachable image that appealed to corporate stakeholders and tech enthusiasts.`,
       },
       {
         title: 'Role:',
@@ -309,8 +310,7 @@ const metadata = {
     items={[
       {
         title: 'Description:',
-        description:
-          'The project involved a complete rebranding, incorporating cutting-edge technologies to convey a modern and approachable image that resonated with both corporate clients and technology enthusiasts.',
+        description: `Within my role at ${indiciusUrl}, I played a pivotal part in orchestrating a thorough rebranding endeavor. Leveraging avant-garde technologies, we meticulously crafted a sophisticated and approachable image that appealed to corporate stakeholders and tech enthusiasts.`,
       },
       {
         title: 'Role:',
@@ -412,7 +412,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Hire me',
-        // href: '/',
+        href: 'https://cal.com/juanso',
       },
     ]}
   />
