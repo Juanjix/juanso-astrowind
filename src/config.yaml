@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: AstroWind
-    template: '%s — AstroWind'
+    template: '%s'
   description: "\U0001F680 I am a frontend developer with four years of experience, specializing in crafting exceptional web experiences. I work remotely from Argentina, blending strong technical skills with a passion for innovation and user-centered design."
   robots:
     index: true
