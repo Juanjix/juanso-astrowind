@@ -129,7 +129,19 @@ const indiciusUrl =
     items={[
       {
         title:
-          'Front End Developer <br /> <span class="font-normal">Indicius, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2020 - 2023</span>',
+          'Freelance Frontend Developer <br /> <span class="font-normal">Remote, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2018 - present</span>',
+        description: `• As a Front-End Developer at Indicius since 2020, I've been the creative force behind translating design concepts into vibrant and functional digital experiences.<br/><br/>
+        • I played a key role in ensuring our products are not only visually appealing but also user-friendly, accessible, scalable, and high-performing.<br/><br/>
+        • Collaborated closely with the Design team to validate and implement their creative ideas seamlessly into the development process.<br/><br/>
+        • Effective communication is at the core of my role—I've been proactive in updating all stakeholders on project-related situations, whether positive or negative, using tools like GitLab and Trello<br/><br/>
+        • Adhered rigorously to development guidelines, contributing to the establishment of high standards for all company projects.<br/><br/>
+        • Meticulously documented every aspect of the development process, ensuring a clear and comprehensive understanding of the tools involved for ef:cient project management.<br/><br/>
+        <span>Tech Stack: React, TypeScript, GraphQL, Gatsby, Figma, Contenteful</span>`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Frontend Developer <br /> <span class="font-normal">Indicius, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2020 - 2023</span>',
         description: `• As a Front-End Developer at Indicius since 2020, I've been the creative force behind translating design concepts into vibrant and functional digital experiences.<br/><br/>
         • I played a key role in ensuring our products are not only visually appealing but also user-friendly, accessible, scalable, and high-performing.<br/><br/>
         • Collaborated closely with the Design team to validate and implement their creative ideas seamlessly into the development process.<br/><br/>
@@ -224,13 +236,51 @@ const indiciusUrl =
   </div>
   <!-- Tech End -->
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget Project 1 START **************** -->
+
+  <!-- Freelance project 1 START -->
+  <Content
+    isReversed
+    title="Explore my portfolio"
+    subtitle="Embark on a development journey that transcends lines of code, delving into a world of innovation. Explore my portfolio, where passion and creativity converge to shape captivating software experiences."
+    items={[
+      {
+        title: 'Description:',
+        description: `Within my role at ${indiciusUrl}, I played a pivotal part in orchestrating a thorough rebranding endeavor. Leveraging avant-garde technologies, we meticulously crafted a sophisticated and approachable image that appealed to corporate stakeholders and tech enthusiasts.`,
+      },
+      {
+        title: 'Role:',
+        description:
+          'I actively participated in the comprehensive development of the project, collaborating closely with the design team.',
+      },
+    ]}
+    image={{
+      src: '/images/open-graph-milito.png',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://clinicamilito.com',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Clinica Milito <br /><span class="text-2xl">Brand - Website - Development</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  <!-- Freelance project 1 END -->
 
   <Content
     id="porfolio"
-    title="Explore my portfolio"
-    subtitle="Embark on a development journey that transcends lines of code, delving into a world of innovation. Explore my portfolio, where passion and creativity converge to shape captivating software experiences."
     isReversed
+    isAfterContent={true}
     items={[
       {
         title: 'Description:',
@@ -264,8 +314,9 @@ const indiciusUrl =
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget Project 1 END **************** -->
 
+  <!-- Content Widget Project 2 START **************** -->
   <Content
     isReversed
     isAfterContent={true}
@@ -289,7 +340,6 @@ const indiciusUrl =
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
       href: 'https://operators-guild.com',
-      class: 'hover:text-red-500',
     }}
   >
     <Fragment slot="content">
@@ -303,7 +353,9 @@ const indiciusUrl =
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
+  <!-- Content Widget Project 2 END **************** -->
+
+  <!-- Content Widget Project 3 START **************** -->
 
   <Content
     isReversed
@@ -341,68 +393,7 @@ const indiciusUrl =
     </Fragment>
   </Content>
 
-  <!-- Testimonials Widget *********** -->
-
-  <!-- <Testimonials
-    title="Client testimonials"
-    subtitle="Discover what clients have to say about their experiences working with me."
-    testimonials={[
-      {
-        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
-        name: 'Mark Thompson',
-        job: 'Creative director',
-        image: {
-          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Mark Thompson Image',
-        },
-      },
-      {
-        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
-        name: 'Emily Martinez',
-        job: 'CEO',
-        image: {
-          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
-          alt: 'Emily Martinez Image',
-        },
-      },
-      {
-        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
-        name: 'Laura Simmons',
-        job: 'Founder of an NGO',
-        image: {
-          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Laura Simmons Image',
-        },
-      },
-      {
-        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
-        name: 'Alex Foster',
-        job: 'Director of web services',
-        image: {
-          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Alex Foster Image',
-        },
-      },
-      {
-        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
-        name: 'Jessica Collins',
-        job: 'Product Manager',
-        image: {
-          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
-          alt: 'Jessica Collins Image',
-        },
-      },
-      {
-        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
-        name: 'Michael Carter',
-        job: 'Event Coordinator',
-        image: {
-          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Michael Carter Image',
-        },
-      },
-    ]}
-  /> -->
+  <!-- Content Widget Project 3 END **************** -->
 
   <!-- CallToAction Widget *********** -->
 
