@@ -1,6 +1,6 @@
 site:
   name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  site: 'https://juanso-frontend-engineer.vercel.app
   base: '/'
   trailingSlash: false
 
@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
+    default: Juan José Peralta
+    template: '%s — Juan José Peralta'
   description: "\U0001F680 Soy un desarrollador frontend con cuatro años de experiencia, especializado en la creación de experiencias web excepcionales. Trabajo de forma remota desde Argentina, combinando habilidades técnicas sólidas con una pasión por la innovación y el diseño centrado en el usuario."
   robots:
     index: true
