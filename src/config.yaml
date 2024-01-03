@@ -16,7 +16,7 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: juanso-frontend-engineer
     images:
       - url: '~/assets/images/juanso-cv-photo.jpeg'
         width: 1200
