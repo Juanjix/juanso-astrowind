@@ -11,7 +11,7 @@ metadata:
   title:
     default: Juan José Peralta
     template: '%s — Juan José Peralta'
-  description: "\U0001F680 Soy un desarrollador frontend con cuatro años de experiencia, especializado en la creación de experiencias web excepcionales. Trabajo de forma remota desde Argentina, combinando habilidades técnicas sólidas con una pasión por la innovación y el diseño centrado en el usuario."
+  description: "\U0001F680 I am a frontend developer with four years of experience, specializing in crafting exceptional web experiences. I work remotely from Argentina, blending strong technical skills with a passion for innovation and user-centered design."
   robots:
     index: true
     follow: true
