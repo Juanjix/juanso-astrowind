@@ -226,13 +226,27 @@ const indiciusUrl =
 
   <!-- Tech Start -->
   <Features3 title="Tech" subtitle="The Newest Technological Tools in My Arsenal." id="tech" />
-  <div class="flex flex-col items-center gap-20 md:flex-row md:justify-around md:gap-0 mb-20 md:mb-40">
-    <Fragment set:html={Vercel} />
-    <Fragment set:html={AstroLogo} />
-    <Image src={Gatsby} alt="" height={90} />
-    <Image src={React} alt="" width={90} />
-    <Image src={Contentful} alt="" width={90} />
-    <Image src={Figma} alt="" width={90} />
+  <div
+    class="grid grid-cols-2 gap-20 md:flex md:flex-row justify-center md:justify-around md:gap-0 mb-20 md:mb-40 px-8"
+  >
+    <div class="flex justify-center">
+      <Fragment set:html={Vercel} />
+    </div>
+    <div class="flex justify-center">
+      <Image src={Gatsby} alt="" height={90} />
+    </div>
+    <div class="flex justify-center">
+      <Fragment set:html={AstroLogo} />
+    </div>
+    <div class="flex justify-center">
+      <Image src={React} alt="" width={90} />
+    </div>
+    <div class="flex justify-center">
+      <Image src={Contentful} alt="" width={90} />
+    </div>
+    <div class="flex justify-center">
+      <Image src={Figma} alt="" width={90} />
+    </div>
   </div>
   <!-- Tech End -->
 
