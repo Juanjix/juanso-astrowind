@@ -181,6 +181,7 @@ export interface CallToAction extends HTMLAttributes<a> {
   icon?: string;
   classes?: Record<string, string>;
   type?: 'button' | 'submit' | 'reset';
+  download?: 'download';
 }
 
 export interface ItemGrid {
