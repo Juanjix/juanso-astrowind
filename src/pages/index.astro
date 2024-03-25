@@ -25,6 +25,8 @@ const metadata = {
 
 const indiciusUrl =
   '<a href="https://indicius.com" target="_blank" rel="noopener noreferrer" class="indi-link">Indicius</a>';
+
+const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener noreferrer" class="indi-link">LiteBox</a>`;
 ---
 
 <Layout metadata={metadata}>
@@ -253,12 +255,48 @@ const indiciusUrl =
 
   <!-- Content Widget Project 1 START **************** -->
 
-  <!-- Freelance project 1 START -->
   <Content
-    id="portfolio"
     isReversed
     title="Explore my portfolio"
     subtitle="Embark on a development journey that transcends lines of code, delving into a world of innovation. Explore my portfolio, where passion and creativity converge to shape captivating software experiences."
+    isAfterContent={false}
+    items={[
+      {
+        title: 'Description:',
+        description: `Under the umbrella of a freelance engagement, I immersed myself in a challenging project presented by ${liteBox} as part of their rigorous application process for the Software Engineer role. Leveraging my expertise in Next.js, Node.js, Drizzle, and Chakra UI`,
+      },
+      {
+        title: 'Role:',
+        description: "I assumed full responsibility for every aspect of the project's development.",
+      },
+    ]}
+    image={{
+      src: '/images/liteflix-graph.png',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://liteflix-next-azure.vercel.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Liteflix <br /><span class="text-2xl">Development</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Freelance project 1 START -->
+  <Content
+    id="portfolio"
+    isAfterContent={true}
+    isReversed
     items={[
       {
         title: 'Description:',
