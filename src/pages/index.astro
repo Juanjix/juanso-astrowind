@@ -26,6 +26,8 @@ const metadata = {
 const indiciusUrl =
   '<a href="https://indicius.com" target="_blank" rel="noopener noreferrer" class="indi-link">Indicius</a>';
 
+const littleGiantsCourts = '<a href="https://littlegiantscourts.com">Little Giants Courts</a>';
+
 const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener noreferrer" class="indi-link">LiteBox</a>`;
 ---
 
@@ -304,6 +306,46 @@ const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener nore
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <!-- Content Widget Project START **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `As part of the digital launch for ${littleGiantsCourts}, a unique padel experience tailored for kids, I led the development of a sleek and engaging landing page. Working closely with the branding team, we brought the vision to life through a playful yet polished user experience that resonates with both parents and young audiences.`,
+      },
+      {
+        title: 'Role:',
+        description:
+          'I was fully in charge of the front-end development of the site, implementing the design with technologies like Next.js, TypeScript, styled-components, and Contentful for dynamic content management. I also handled mobile responsiveness, performance optimization, and third-party integrations like Formspree for the contact form.',
+      },
+    ]}
+    image={{
+      src: '/images/open-graph-lgc.png',
+      alt: 'Little Giants Courts Open Graph',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://littlegiantscourts.com',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Little Giants Courts <br /><span class="text-2xl">Brand - New Marketing Website</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget Project END **************** -->
 
   <!-- Freelance project 1 START -->
   <Content
