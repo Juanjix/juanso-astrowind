@@ -37,8 +37,8 @@ const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener nore
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
-        { text: 'Portfolio', href: '#portfolio' },
         { text: 'Tech', href: '#tech' },
+        { text: 'Portfolio', href: '#portfolio' },
       ]}
       actions={[
         {
@@ -130,6 +130,18 @@ const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener nore
     id="resume"
     title="Work experience"
     items={[
+      {
+        title:
+          'Frontend Engineer <br /> <span class="font-normal">Neoris an Epam Company, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2024 - Present</span>',
+        description: `• As a Frontend Engineer at Neoris an Epam Company since October 2024, I've been the creative force behind translating design concepts into vibrant and functional digital experiences.<br/><br/>
+        • I played a key role in ensuring our products are not only visually appealing but also user-friendly, accessible, scalable, and high-performing.<br/><br/>
+        • Collaborated closely with the Backend team.<br/><br/>
+        • Effective communication is at the core of my role—I've been proactive in updating all stakeholders on project-related situations, whether positive or negative, using tools like GitLab and Jira<br/><br/>
+        • Adhered rigorously to development guidelines, contributing to the establishment of high standards for all company projects.<br/><br/>
+        • Meticulously documented every aspect of the development process, ensuring a clear and comprehensive understanding of the tools involved for ef:cient project management.<br/><br/>
+        <span>Tech Stack: React, TypeScript, Java</span>`,
+        icon: 'tabler:briefcase',
+      },
       {
         title:
           'Frontend Developer <br /> <span class="font-normal">Indicius, Buenos Aires, Argentina </span> <br /> <span class="text-sm font-normal">2020 - 2023</span>',
@@ -257,6 +269,7 @@ const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener nore
 
   <Content
     isReversed
+    id="portfolio"
     title="Explore my portfolio"
     subtitle="Embark on a development journey that transcends lines of code, delving into a world of innovation. Explore my portfolio, where passion and creativity converge to shape captivating software experiences."
     isAfterContent={false}
@@ -294,7 +307,6 @@ const liteBox = `<a href="https://litebox.io" target="_blank" rel="noopener nore
 
   <!-- Freelance project 1 START -->
   <Content
-    id="portfolio"
     isAfterContent={true}
     isReversed
     items={[
